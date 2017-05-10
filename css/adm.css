@@ -1,0 +1,86 @@
+@font-face {font-family:OpenSans;src:url("../fonts/OpenSans-Regular.ttf");}
+*{font-family:'OpenSans',sans-serif;}
+html,body{padding:0px;margin:0px;width:100%;height:100%;}
+a,a:active{text-decoration:none;color:inherit;}
+header{position:fixed;width:100%;height:60px;background-color:white;box-shadow:0px 0px 8px #666666;}
+#logo_topo{float:left;margin-left:20px;height:36px;padding:12px;}
+#logo_topo img{height:36px;}
+#login{float:left;width:50%;margin-left:25%;padding:2%;box-shadow:0px 0px 4px #666666;margin-top:15%;background-color:#A87DCA;border-radius:10px;}
+#logo{height:80px;margin-bottom:5%;}
+#logo img{display:block;height:80px;margin:0px auto;}
+.erro{float:left;margin-top:-2%;margin-bottom:2%;color:#B52D2D;}
+
+header nav{margin:0px auto;padding:0px;float:left;}
+header nav ul{margin:0px;padding:0px;}
+header nav ul li{display:inline-block;margin:20px 0px 20px 0px;padding:0px 20px 0px 20px;border-right:1px solid #666666;cursor:pointer;}
+header nav ul a:last-child li{border-right:0px;}
+header nav ul li:hover{color:#652C90;}
+
+#profile_topo{float:right;height:44px;margin-top:8px;margin-right:32px;cursor:pointer;}
+#profile_topo #ft_topo{float:left;height:44px;width:44px;background-position:center;background-size:cover;border-radius:50%;}
+#name_profile{float:left;margin-top:10px;margin-left:16px;}
+#opc_profile{display:none;position:absolute;background-color:white;border-radius:5px;box-shadow:0px 0px 4px #666666;right:32px;top:60px;}
+#opc_profile ul{margin:0px;padding:0px;}
+#opc_profile ul li{list-style:none;margin:16px 16px 0px 16px;padding-bottom:16px;cursor:pointer;}
+#opc_profile ul a:first-child li{border-bottom:1px solid #666666;}
+#opc_profile ul li:hover{color:#652C90;}
+
+#conteudo{float:left;width:100%;margin-top:92px;}
+#conteudo #cont{margin:0px auto;width:1144px;}
+#title{float:left;width:calc(100% - 50px);font-size:2em;}
+#add{float:right;width:50px;}
+#add img{width:50px;}
+
+/* Tags */
+#tag_grid{float:left;margin-top:32px;width:100%;border-top:1px solid #666666;}
+.tag{display:inline-block;margin:16px 8px 16px 8px;padding:4px 16px 4px 16px;border-radius:50px;background-color:#652C90;color:white;cursor:pointer;}
+.tag .opc_tag{width:72px;float:right;overflow:hidden;white-space:no-wrap;transition:width 0.5s;}
+.tag .opc_tag img{float:left;height:20px;margin-left:8px;}
+.tag .opc_tag a:first-child img{margin-left:24px;}
+
+/* Autores */
+#aut_grid{float:left;margin-top:32px;width:100%;border-top:1px solid #666666;}
+#aut_grid .card{display:table;float:left;width:49.9%;padding-top:32px;padding-bottom:32px;border-bottom:1px solid #666666;}
+#aut_grid .card .foto{display:table-cell;float:left;width:100px;padding-left:16px;}
+#aut_grid .card .foto img{width:100px;border-radius:50%;}
+#aut_grid .card .nome{display:table-cell;width:100%;vertical-align:middle;font-size:1.5em;padding-left:32px;padding-right:32px;}
+#aut_grid .card .nome div{color:#666666;font-size:0.8em;}
+#aut_grid .card .btn{display:table-cell;vertical-align:middle;padding-right:16px;}
+#aut_grid .card .btn img{height:40px;}
+#nothing{text-align:center;margin-top:32px;}
+
+/* Postagem */
+#post_grid{float:left;margin-top:32px;padding-top:32px;width:100%;border-top:1px solid #666666;}
+.card_post{float:left;width:calc(50% - 2px);height:300px;border-left:2px solid white;;border-bottom:2px solid white;cursor:pointer;overflow:hidden;background-position:center;background-size:cover;background-repeat:no-repeat;background-image:url('../imgs/images/fundo.jpg');transition:background-size 0.3s ease-in-out;}
+.fundo_card{display:table;width:100%;height:100%;background-color:rgba(0,0,0,0.6);}
+.content_card{display:table-cell;vertical-align:middle;text-align:center;color:white;padding-left:32px;padding-right:32px;}
+.content_card .card_title{font-size:2em;margin-bottom:0.5em;font-weight:bold;}
+.content_card .date_card{font-size:1.3em;margin-bottom:0.5em;}
+.content_card .autor_card{font-size:1em;}
+.edit_card{height:300px;float:right;padding-left:16px;padding-right:16px;padding-top:6px;background-color:#652C90;width:48px;}
+.edit_card img{width:48px;margin-top:64px;}
+
+input[type=text], input[type=password], textarea{float:left;width:98%;border:1px solid #652C90;padding:1%;border-radius:5px;margin-bottom:3%;}
+input[type=submit]{cursor:pointer;float:left;width:98%;border:1px solid #652C90;padding:2% 1% 2% 1%;border-radius:5px;margin-bottom:3%;color:#652C90;background:white;transition:background 0.5s, color 0.5s;}
+input[type=submit]:hover{background:#652C90;color:white;}
+input, textarea{font-size:1em;}
+textarea{resize:none;height:150px;}
+input:focus,textarea:focus{outline:none;border:2px solid #652C90;margin-left:-1px;margin-top:-1px;}
+
+/* Configurações */
+#config_grid{float:left;margin-top:32px;width:100%;border-top:1px solid #666666;padding-top:32px;}
+#config_grid input[type=submit]{float:right;width:initial;padding:1% 4% 1% 4%;}
+#config_grid #foto_config{float:left;width:35%;margin-right:5%;}
+#config_grid #foto_config:hover #label{display:block;}
+#config_grid #foto_config #ft{width:100%;background-position:center;background-size:cover;}
+#config_grid #foto_config #label{display:none;position:relative;margin-top:-40px;padding-top:8px;padding-bottom:8px;color:white;text-align:center;width:100%;background-color:rgba(0,0,0,0.5);}
+#config_grid #foto_config #label label{cursor:pointer;}
+#config_grid .input_config{float:left;width:60%;margin-bottom:16px;}
+#config_grid .input_config input,#config_grid .input_config textarea{padding:8px;width:calc(100% - 16px);margin-bottom:0px;}
+#troca_senha{float:left;width:100%;border-top:1px solid #666666;}
+#troca_senha #title_senha{float:left;font-size:1.5em;width:100%;line-height:3em;}
+#troca_senha .input_config{float:left;width:98%;margin-left:1%;margin-right:1%;margin-bottom:16px;}
+#troca_senha .input_config input{padding:8px;width:calc(100% - 16px);margin-bottom:0px;}
+#troca_senha input[type=submit]{float:left;width:initial;padding:1% 4% 1% 4%;margin-left:8px;clear:both;}
+
+#input_file {width: 0.1px;height: 0.1px;opacity: 0;overflow: hidden;position: absolute;z-index: -1;}

@@ -1,0 +1,38 @@
+@font-face {font-family:OpenSans;src:url("../fonts/OpenSans-Regular.ttf");}
+*{box-sizing:border-box;font-family:'OpenSans',sans-serif;}
+html,body{padding:0px;margin:0px;width:100%;height:100%;}
+a,a:active{text-decoration:none;color:inherit;}
+header{position:fixed;width:100%;height:60px;background-color:white;box-shadow:0px 0px 8px #666666;}
+#logo_topo{float:left;margin-left:20px;height:36px;padding:12px;}
+#logo_topo img{height:36px;}
+#pesquisa{float:right;height:44px;margin-top:8px;margin-right:32px;border:1px solid #5D5D5D;}
+#pesquisa #btn_pesq{float:left;height:44px;cursor:pointer;transition:background 0.5s;}
+#pesquisa #btn_pesq:hover{background-color:#5D5D5D;}
+#pesquisa #btn_pesq img{height:32px;margin:6px;}
+#pesquisa #input_pesq{float:left;height:48px;}
+#pesquisa #input_pesq input{display:none;width:0px;font-size:20px;padding:7px 0px 7px 0px;border:0px;opacity:0;transition:all 0.5s;}
+#pesquisa #input_pesq input:focus{outline:none;}
+.btn_tags{display:none;position:absolute;top:60px;opacity:0.3;transition:opacity 0.3s;cursor:pointer;}
+.btn_tags:hover{opacity:0.8;}
+.btn_tags img{width:60px;}
+#tags{float:left;margin-top:60px;width:calc(100% - 152px);margin-left:74px;margin-right:74px;white-space:nowrap;overflow:hidden;}
+#tags #content_tags{display:inline-block;}
+#tags .tag{display:inline-block;margin:16px 8px 16px 8px;padding:4px 16px 4px 16px;border-radius:50px;background-color:#652C90;color:white;cursor:pointer;transition:transform 0.3s;}
+#tags .tag:hover{transform:scale(1.1);}
+
+#feed{float:left;width:100%;}
+.card{float:left;width:33.33333%;height:350px;border-left:2px solid white;;border-bottom:2px solid white;cursor:pointer;overflow:hidden;background-position:center;background-size:cover;background-repeat:no-repeat;background-image:url('../imgs/images/fundo.jpg');transition:background-size 0.3s ease-in-out;}
+.fundo_card{display:table;width:100%;height:100%;background-color:rgba(0,0,0,0.6);}
+.content_card{display:table-cell;vertical-align:middle;text-align:center;color:white;padding-left:32px;padding-right:32px;}
+.content_card .card_title{font-size:2em;margin-bottom:0.5em;font-weight:bold;}
+.content_card .date_card{font-size:1.3em;margin-bottom:0.5em;}
+.content_card .autor_card{font-size:1em;}
+#btn_more{float:left;width:50%;padding-top:1%;padding-bottom:1%;margin-left:25%;margin-top:3%;border:1px solid #652C90;text-align:center;color:#652C90;cursor:pointer;transition:all 0.5s;}
+#btn_more:hover{background-color:#652C90;color:white;}
+
+#nothing{float:left;width:100%;text-align:center;}
+
+footer{float:left;width:100%;background-color:black;color:white;margin-top:3%;}
+#rodape #social{float:left;margin-top:2%;}
+#rodape #social img{height:48px;}
+#rodape #copyright{float:left;width:100%;text-align:center;margin-top:1%;margin-bottom:2%;}
